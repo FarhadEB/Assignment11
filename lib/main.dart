@@ -262,7 +262,6 @@ class _MainAppState extends State<MainApp> {
              GestureDetector(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) =>Grape()));
-                
               },
               child: Container(
                 color: Colors.blue,
