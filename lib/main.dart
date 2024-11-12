@@ -116,8 +116,8 @@ class _MainAppState extends State<MainApp> {
           children: [
             GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) =>Apple()));
-                
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>Apple()));
+          
               },
               child: Container(
                 color: Colors.blue,
