@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Text(
           '''Welcome to Afghan Fruit App!
-             Version 0.0
+             Version 1.0.1
           ''',
           style: TextStyle(
             color: Colors.white,
