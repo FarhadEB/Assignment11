@@ -35,7 +35,7 @@ class Apple extends StatelessWidget {
               height: 200,
               width: 200,
               child: Text('''
-                    Disease Prevention: The compounds in apples can help prevent chronic diseases such as type 2 diabetes and cardiovascular diseases.
+                  Disease Prevention: The compounds in apples can help prevent chronic diseases such as type 2 diabetes and cardiovascular diseases.
                  - Weight Loss: Due to its high fiber content, apples can increase feelings of fullness and aid weight loss.
                 '''),
             )
