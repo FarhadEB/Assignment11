@@ -78,7 +78,7 @@ class _MainAppState extends State<MainApp> {
                     SnackBar(content: Text('Share the app clicked!')),
                   );
                   break;
-                case 'About':
+                case 'About Me':
                 Navigator.push(context, MaterialPageRoute(builder: (c)=>AboutMe()));
                   break;
                 case 'Exit':
