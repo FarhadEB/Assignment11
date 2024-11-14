@@ -69,6 +69,13 @@ class _MainAppState extends State<MainApp> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Afghan Fruits App'),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/Fruits.png'),
+              ),
+          ),
+        ),
         actions: [
           PopupMenuButton<String>(
             onSelected: (value) {
