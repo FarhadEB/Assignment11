@@ -26,19 +26,17 @@ class Apple extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            CircleAvatar(
-              backgroundImage: AssetImage('assets/images/Apple.png'),
-              radius: 100,
+            Hero(
+              tag: 'Apple',
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/Apple.png'),
+                radius: 100,
+              ),
             ),
-            Container(
-              color: Colors.grey,
-              height: 200,
-              width: 200,
-              child: Text('''
+            Text('''
                   Disease Prevention: The compounds in apples can help prevent chronic diseases such as type 2 diabetes and cardiovascular diseases.
                  - Weight Loss: Due to its high fiber content, apples can increase feelings of fullness and aid weight loss.
-                '''),
-            )
+                ''')
           ],
         ),
       ),
@@ -47,9 +45,14 @@ class Apple extends StatelessWidget {
 }
 
 // 2 Pomegranate
-class Pomegranate extends StatelessWidget {
+class Pomegranate extends StatefulWidget {
   const Pomegranate({super.key});
 
+  @override
+  State<Pomegranate> createState() => _PomegranateState();
+}
+
+class _PomegranateState extends State<Pomegranate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,20 +72,18 @@ class Pomegranate extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            CircleAvatar(
-              backgroundImage: AssetImage('assets/images/Pomegranate.png'),
-              radius: 100,
+            Hero(
+              tag: 'Pomegranate',
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/Pomegranate.png'),
+                radius: 100,
+              ),
             ),
-            Container(
-              color: Colors.grey,
-              height: 200,
-              width: 200,
-              child: Text('''
+            Text('''
                   Pomegranate Juice: Contains polyphenol compounds that may help reduce the risk of heart disease and certain cancers.
              - Memory Boost: Some studies suggest that pomegranate consumption can enhance memory function.
         
-              '''),
-            )
+              ''')
           ],
         ),
       ),
@@ -113,9 +114,12 @@ class Peach extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            CircleAvatar(
-              backgroundImage: AssetImage('assets/images/Peach.png'),
-              radius: 100,
+            Hero(
+              tag: 'Peach',
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/Peach.png'),
+                radius: 100,
+              ),
             ),
             Container(
               color: Colors.grey,
